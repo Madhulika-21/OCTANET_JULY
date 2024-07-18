@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Todo List</h1>
+      <div class="date">
+        <i class="fas fa-calendar-alt"></i>
+        <span id="current-date"></span>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar-wrapper">
+        <div id="progress-bar"></div>
+      </div>
+      <div class="progress-text">
+        <span id="completed-count-overview">0</span>/<span id="total-count">0</span> Completed
+      </div>
+    </div>
+    <div class="input-container">
+      <input class="todo-input" placeholder="Add a new task...">
+      <button class="add-button"><i class="fa fa-plus-circle"></i></button>
+    </div>
+    <div class="todos-container">
+      <ul class="todos"></ul>
+      <img class="empty-image" src="to do.png" alt="No tasks">
+    </div>
+    <div class="overview">
+      <div class="completed-tasks">
+        <i class="fas fa-check-circle"></i>
+        <span id="completed-count">0</span> Completed
+      </div>
+      <div class="pending-tasks">
+        <i class="fas fa-times-circle"></i>
+        <span id="pending-count">0</span> Pending
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
